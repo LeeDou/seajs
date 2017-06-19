@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简单示例</title>
+</head>
+
+<body>
+<h1 id="title">seajs demo</h1>
+<div id="box">盒子</div>
+<script src="sea.js"></script>
+<script>
+seajs.config({
+        alias:{
+            'jquery': './jquery2.js',
+        }
+    });
+seajs.use('jquery',function($){
+    $('#box').click(function(){
+        alert('hello');
+    })
+})
+
+</script>	
+</body>
+</html>
