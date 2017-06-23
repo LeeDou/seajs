@@ -29,13 +29,7 @@ seajs.resolve('./a', 'http://example.com/to/b.js');
 
 > seajs.resolve 方法不光可以用来调试路径解析是否正确，还可以用在插件开发环境中。
 
-
-
-
-
-
-
-
+### seajs.data Object
 
 通过seajs.data， 可以看到seajs所有配置以及一些内部变量的值，可用于插件开发。当加载遇到问题时，也可用于调试。
 
